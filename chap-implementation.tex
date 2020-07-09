@@ -1,0 +1,32 @@
+\chapter{Implementation}
+\label{chap:implementation}
+
+We can refer to Chapter~\ref{chap:analysis-and-design} for something.
+
+\bigskip
+
+Here is an example formula to compute a sum:
+%
+\begin{align*}
+  \sum_{i=1}^{n} = \frac{n (n+1)}{2}
+\end{align*}
+
+Math can also be included inline $a (b + c) = a b + a c$ in a sentence.
+
+\bigskip
+We refer to Listing~\ref{lst:sum} for the Java implementation.\\ % force new line
+Code snippets like \lstinline{System.out.println} can also be given inside a sentence.
+
+\begin{lstlisting}[language=java,caption={Our sum implementation},float=tb,label=lst:sum]
+  class Sum {
+    public static void main(String[] args) {
+      int n = 5;   // the input
+      int sum = n * (n+1);
+      System.out.println("The sum is: " + sum);
+    }
+  }
+\end{lstlisting}
+
+\bigskip
+
+Finally we can refer to some material in Appendix~\ref{appendix:api-doc}. 
